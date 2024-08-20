@@ -58,7 +58,7 @@ nav ul.menu li img {height: 25px; width: 25px;}
 
 /*HEADER + HEADERIMAGES__________________________*/
 .header-images { display: flex; justify-content: center; padding-top: 65px; }
-.header-images img { max-width: 800px; height: 400px; margin: 20px; display: none; }
+.header-images img { max-width: 850px; height: 550px; margin: 20px; }
 .header-images {background-image: url('LOGO/BACKGROUND1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: auto; min-height: 200px;}
 
 @media (max-width: 950px) 
@@ -445,8 +445,7 @@ table.FRIEND {margin: 0; border-spacing: 0;}
 
 <main>
 <div class="header-images">
-<img class="HIMG" src="LOGO\வாழ்கையின் சாகசகாரன்.png" alt="Header Image 1">
-<img class="HIMG" src="LOGO\RAJ VISHNU KUMAR.png" alt="Header Image 2">
+<img class="HIMG" src="LOGO\RVK.gif">
 </div>
 
 <div class="tabcontainer">
@@ -2053,21 +2052,6 @@ I felt very happy and relieved knowing that I had helped a suffering soul find p
 </center>
 </footer>
 
-
-
-
-<script>    // HEADER IMAGE TRANSITION //
-window.onload = function() {
-const headerImages = document.querySelectorAll('.header-images img');
-let currentIndex = 0;
-headerImages[currentIndex].style.display = 'block'; // Show the first image
-function switchImage() {
-headerImages[currentIndex].style.display = 'none';
-currentIndex = (currentIndex + 1) % headerImages.length;
-headerImages[currentIndex].style.display = 'block';
-setTimeout(switchImage, 5000); // Switch every 5 seconds
-}switchImage();};
-</script>
 
 
 
